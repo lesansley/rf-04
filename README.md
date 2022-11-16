@@ -45,3 +45,5 @@ function NewComponent(props) {
   <div class="final">adieu</div>
 </div>
 ```
+
+Attribution: https://epicreact.dev/modules/react-fundamentals/
