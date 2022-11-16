@@ -1,6 +1,30 @@
 # rf-04
 
-Rendering JSX from functions
+## Rendering JSX from functions
+
+```
+function message({children}) {
+  return <div className="message">{children}</di>
+}
+
+const goodbyeElement = message({children: "Goodbye"}
+
+const element = (
+  <div className="container">
+    {message({children: "Hello"})}
+    {goodbyeElement}
+  </div>
+)
+```
+Renders as
+```
+<div className="container">
+  <div class="message">Hello</div>
+  <div class="message">Goodbye</div>
+</div>
+```
+
+
 
 ```
 function NewComponent(props) {
