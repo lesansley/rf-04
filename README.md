@@ -34,7 +34,7 @@ function NewComponent(props) {
 
 ## Methods of consuming the NewComponent
 
-- React.Fragment
+- React.createElement
 
 ```
 <React.Fragment>
