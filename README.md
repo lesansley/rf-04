@@ -2,6 +2,7 @@
 
 ## Rendering JSX from functions
 
+**`Message` component**
 ```
 function message({children}) {
   return <div className="message">{children}</di>
@@ -24,7 +25,7 @@ Renders as
 </div>
 ```
 
-
+**`NewComponent` component**
 
 ```
 function NewComponent(props) {
