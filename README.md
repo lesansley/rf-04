@@ -25,7 +25,7 @@ Renders as
 </div>
 ```
 
-## Methods of rendering JSX
+## Methods of rendering custom components
 
 **`NewComponent` component**
 
