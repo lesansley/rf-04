@@ -25,6 +25,8 @@ Renders as
 </div>
 ```
 
+## Methods of rendering JSX
+
 **`NewComponent` component**
 
 ```
@@ -32,8 +34,6 @@ function NewComponent(props) {
   return <div {...props} />
 }
 ```
-
-## Methods of consuming the NewComponent
 
 - React.createElement
 
