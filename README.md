@@ -1,2 +1,3 @@
 # rf-04
-Creating custom React components
+
+Rendering JSX from functions
