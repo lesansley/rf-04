@@ -1,0 +1,38 @@
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+  <script type="text/babel">
+    
+    const Message = props => {
+      return <div {...props} />
+    }
+    
+    // Adding a `propTypes` property on the `Message` object. 
+    // This is where the props accepted by `Message` are defined
+    Message.propTypes = {
+      className: PropTypes.string.isRequired,
+      children: PropTypes.string.isRequired,
+    }
+    
+    const rootElement = document.getElementById("root")
+    const reactElement = (
+      <>
+        // Creates the React component `Message`
+        {React.createElement(Message, {
+          children: 'Hello World',
+          className: 'greeting',
+        })}
+        
+        // Creates the React component `Message`
+        <Message children="Goodbye Cruel World" className="farewell" />
+        
+        // Creates a `div` component
+        {Message({children: 'adieu', className: 'final'})}
+      </>
+    )
+    ReactDOM.createRoot(rootElement).render(reactElement)
+  </script>
+</body>
