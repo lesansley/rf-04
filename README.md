@@ -34,7 +34,7 @@ function NewComponent(props) {
 
 ## Methods of consuming the NewComponent
 
-- Option 1
+- React.Fragment
 
 ```
 <React.Fragment>
@@ -45,7 +45,7 @@ function NewComponent(props) {
 </React.Fragment>
 ```
 
-- Option 2
+- JSX
 
 ```
 <React.Fragment>
@@ -53,7 +53,7 @@ function NewComponent(props) {
 </React.Fragment>
 ```
 
-- Option 3
+- Function call
 
 ```
 <React.Fragment>
