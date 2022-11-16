@@ -13,28 +13,28 @@ function NewComponent(props) {
 - Option 1
 
 ```
-<div>
+<React.Fragment>
   {React.createElement(NewComponent, {
     children: 'Hello World',
     className: 'greeting',
   })}
-</div>
+</React.Fragment>
 ```
 
 - Option 2
 
 ```
-<div>
+<React.Fragment>
   <NewComponent children="Goodbye Cruel World" className="farewell" />
-<div/>
+</React.Fragment>
 ```
 
 - Option 3
 
 ```
-<div>
+<React.Fragment>
   {NewComponent({children: 'adieu', className: 'final'})}
-</div>
+</React.Fragment>
 ```
 
 ## Renders as
